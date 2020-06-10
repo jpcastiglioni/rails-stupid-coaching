@@ -1,2 +1,15 @@
 <!-- answer.html.erb -->
-<h1>le answer</h1>
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <div class="card" >
+    <p><%= params[:question] %></p>
+    <p>-You</p>
+  </div>
+  <!-- <div style="border-bottom: 1px solid red; width: 100px"></div> -->
+  <div class="card yellow" >
+    <p><%= @answer %></p>
+    <p>-Your Coach</p>
+  </div>
+  <!-- <div style="border-bottom: 1px solid red; width: 100px"></div> -->
+  <p><%= link_to "Ask again", ask_path  %></p>
+</div>
